@@ -1,0 +1,64 @@
+﻿@model Assignment1.Models.Letter
+
+@{
+    ViewData["Title"] = "Prime";
+}
+
+<h1>Prime</h1>
+<button type="submit">PAID</button>
+<br>
+
+<span>Dear @Html.DisplayFor(model => model.Student_FirstName)</span>
+<br>
+<p>[[begin comment]]</p>
+<p>
+    Welcome to all existing students and new students.  [[term]] will commence [[term start]].
+    Please ensure your payment is finalised by [[payment final]] if a student is no longer attending
+    lessons, please email the CYCM to be removed off the email list.
+</p>
+
+<p>
+    If paying by Bank Transfer-EFT, please forward a copy of you payment to the office, to follow
+    up and allocate to the student.
+</p>
+
+<h4>Payment Details:</h4>
+
+<span>Ref#: [[reference number]]</span>
+<br>
+<span>Student: @Html.DisplayFor(model => model.Student_FirstName) @Html.DisplayFor(model => model.Student_LastName)</span>
+<br>
+<span>Amount: $ @Html.DisplayFor(model => model.Amount)</span>
+
+<p>
+    Please follow the <a href="https://webpay.cdu.edu.au/musicschool/tran?tran-type=006&REFNO=reference_number&CUSTNAME=lastname_firstname&PARENTSNAME=parents_name&UNITAMOUNTINCTAX=amount">Hyperlink</a>
+    to make paymnet for [[term]], [[year]].
+</p>
+
+<p>
+    Apply for your Sport Vouchers for [[semester]], [[year]], please visit the <a href="http://www.sportvoucher.nt.gov.au">Hyperlink</a>,
+    as schools are no longer providing students with a sport voucher.
+</p>
+
+<p>
+    Alternatively pay via Bank Transfer-EFT - CDU bank details, delete old bank details;
+</p>
+
+<span>New Bank details</span>
+<br>
+<span>Bank: @Html.DisplayFor(model => model.Bank)</span>
+<br>
+<span>Account Name: @Html.DisplayFor(model => model.Account_Name)</span>
+<br>
+<span>BSB Number: @Html.DisplayFor(model => model.BSB)</span>
+<br>
+<span>Account Number: @Html.DisplayFor(model => model.Account_Number)</span>
+<br>
+<span>Refernce number - please include 'CYCM, Reference number and student name'</span>
+<p>
+    The CYCM is commited to providing students with quality lessons in a positive learning environment.
+</p>
+
+<span>Regards</span>
+<br>
+<span>[[signature]]</span>
