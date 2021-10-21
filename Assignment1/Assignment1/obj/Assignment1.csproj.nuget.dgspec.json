@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\q456\\source\\repos\\Assignment1\\Assignment1\\Assignment1.csproj": {}
+    "C:\\Users\\q456\\Documents\\GitHub\\HIT339\\Assignment1\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\q456\\source\\repos\\Assignment1\\Assignment1\\Assignment1.csproj": {
+    "C:\\Users\\q456\\Documents\\GitHub\\HIT339\\Assignment1\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\q456\\source\\repos\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\q456\\Documents\\GitHub\\HIT339\\Assignment1\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "C:\\Users\\q456\\source\\repos\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectPath": "C:\\Users\\q456\\Documents\\GitHub\\HIT339\\Assignment1\\Assignment1\\Assignment1.csproj",
         "packagesPath": "C:\\Users\\q456\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\q456\\source\\repos\\Assignment1\\Assignment1\\obj\\",
+        "outputPath": "C:\\Users\\q456\\Documents\\GitHub\\HIT339\\Assignment1\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\q456\\AppData\\Roaming\\NuGet\\NuGet.Config",
