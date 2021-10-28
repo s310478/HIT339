@@ -153,17 +153,13 @@ namespace Assignment1.Controllers
         public async Task<IActionResult> Prime(Student student)
         {
             var prev_letter = _context.Letter.FirstOrDefault(); // For Letter deails that stay the same (didn't get that far).
+         
             Letter letter = new()
             {
                 Student_FirstName = student.StudentFirstName,
                 Student_LastName = student.StudentLastName,
-                Amount = _context.Lesson.Where(l=>l.Id == student.Id).Where(l=>l.Paid==false).Sum(l=>l.DurationCost.LessonCost).ToString(), // Doesn't add all cost vaules
-                //Begin_comment =
-                //Term = 
-                //Term_Start =
-                //Payment_Final =
-                //Reference_Number =
-                //Year= 
+                Amount = _context.Lesson.Where(l => l.Id == student.Id).Where(l => l.Paid == false).Sum(l => l.DurationCost.LessonCost).ToString(), // Doesn't add all cost vaules
+                Year = DateTime.Now.Year.ToString(),
                 //Semester =
 
                 Bank = "CYCM Bank placeholder",
