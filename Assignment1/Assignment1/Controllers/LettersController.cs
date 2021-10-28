@@ -160,7 +160,8 @@ namespace Assignment1.Controllers
                 Student_LastName = student.StudentLastName,
                 Amount = _context.Lesson.Where(l => l.Id == student.Id).Where(l => l.Paid == false).Sum(l => l.DurationCost.LessonCost).ToString(), // Doesn't add all cost vaules
                 Year = DateTime.Now.Year.ToString(),
-                //Semester =
+                
+                Reference_Number = DateTime.Now.Year + student.StudentLastName + "UniquieLetterID",
 
                 Bank = "CYCM Bank placeholder",
                 Account_Name = "CYCM Account Name placeholder",
